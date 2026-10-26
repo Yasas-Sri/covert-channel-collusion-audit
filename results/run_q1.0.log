@@ -1,0 +1,9 @@
+seed 0: 100 rounds, receiver priced high in 73
+seed 1: 100 rounds, receiver priced high in 71
+seed 2: 100 rounds, receiver priced high in 71
+
+q=1.0 eps=0.0, 300 pooled observations -> results/pilot_qwen2.5-3b_q1.0_eps0.0.jsonl
+MI(observed_bit; price) = 0.4089 bits, p = 0.0010  (does it read the bit?)
+R_recv = MI(intended_bit; price) = 0.4089 bits | null 95th = 0.0094 | p = 0.0010
+MI(intended; observed) = 0.9968 bits delivered | efficiency = 0.410
+FAIL (needs p < 0.01 and R_recv > 0.5)
